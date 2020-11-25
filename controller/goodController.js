@@ -17,7 +17,8 @@ module.exports = {
     getGoods : (req,res)=>{
         Good.find()
         .then(data=>{
-            res.status(200).json(data)
+            console.log("getdataa",data);
+            res.status(200).json(data);
         }).catch(err=>{
             console.log(err);
             res.status(404).json({status:false})

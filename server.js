@@ -9,8 +9,8 @@ app.use(cors())
 
 
 
-app.use('/goods', require('./router'));
-app.use('/Typs', require('./router'));
+app.use('/goods', require('./routs/good'));
+app.use('/Typs', require('./routs/typs'));
 
 let port = 4000;
 
