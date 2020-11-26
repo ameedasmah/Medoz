@@ -69,7 +69,7 @@ class App extends React.Component {
         <div>
           {
           this.state.goods.map((good,i)=>{
-            return <Card  good={good} key={i} />
+            return <Card getgood={this.getgood} good={good} key={i} />
           })
         }
         </div>
