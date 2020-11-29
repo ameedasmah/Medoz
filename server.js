@@ -12,6 +12,7 @@ app.use(cors())
 app.use('/goods', require('./routs/good'));
 app.use('/Typs', require('./routs/typs'));
 app.use('/delete', require('./routs/good'));
+app.use('/user', require('./routs/user'));
 
 let port = 4000;
 
